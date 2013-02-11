@@ -1,0 +1,35 @@
+[
+  { "keys": ["super+ctrl+left"], "command": "fold" },
+  { "keys": ["super+ctrl+right"], "command": "unfold" },
+  // { "keys": ["ctrl+super+r"], "command": "toggle_settings", "args": { "setting": "review_mode"} },
+
+  // { "keys": ["ctrl + alt + v"], "command": "switchapi" },
+
+  //Increment | Decrement shortcuts
+  { "keys": ["alt+up"],         "command": "inc_dec_value", "args": { "action": "inc_min" } },
+  { "keys": ["alt+down"],       "command": "inc_dec_value", "args": { "action": "dec_min" } },
+
+  //Switch file to spaces for tabs
+  { "keys": ["ctrl+super+space"], "command": "expand_tabs"},
+
+  { "keys": ["ctrl+k"], "command": "prettyjson" },
+
+  { "keys": ["ctrl+super+i"], "command": "open_with", "args": {
+      "paths": [],
+      "application": "/Applications/Preview.app",
+      "extensions":"png|jpg|jpeg|gif" //any file with extension} },
+    }
+  },
+
+  { "keys": ["super+alt+down"], "command": "move", "args": {"by": "block", "forward": true} }
+
+  //Google reader like bindings for Find results
+  // { "keys": ["m"], "command": "fold", "args":{}, "context":{
+  //  "key": "selector", "operator": "equal", "operand": "source.FindResults"
+  //  }
+  // },
+  // { "keys": ["n"], "command": "unfold", "args":{}, "context":{
+  //  "key": "selector", "operator": "equal", "operand": "source.FindResults"
+  //  }
+  // }
+]
