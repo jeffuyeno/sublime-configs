@@ -24,12 +24,24 @@
   { "keys": ["super+alt+down"], "command": "move", "args": {"by": "block", "forward": true} }
 
   //Google reader like bindings for Find results
-  // { "keys": ["m"], "command": "fold", "args":{}, "context":{
-  //  "key": "selector", "operator": "equal", "operand": "source.FindResults"
-  //  }
-  // },
-  // { "keys": ["n"], "command": "unfold", "args":{}, "context":{
-  //  "key": "selector", "operator": "equal", "operand": "source.FindResults"
-  //  }
-  // }
+  { "keys": ["m"], "command": "fold", "args":{}, 
+  	"context": [
+  		{ "key": "selector", "operator": "equal", "operand": "text.find-in-files" }
+   	]
+  },
+  { "keys": ["n"], "command": "unfold", "args":{}, 
+  	"context":[
+   		{ "key": "selector", "operator": "equal", "operand": "text.find-in-files" }
+   	]
+  },
+  { "keys": ["j"], "command": "find_next",
+  	"context": [
+  		{ "key": "selector", "operator": "equal", "operand": "text.find-in-files" }
+  	]
+  },
+	{ "keys": ["k"], "command": "find_prev",
+  	"context": [
+  		{ "key": "selector", "operator": "equal", "operand": "text.find-in-files" }
+  	]
+  }
 ]
