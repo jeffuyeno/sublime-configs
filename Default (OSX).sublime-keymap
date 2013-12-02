@@ -21,7 +21,7 @@
     }
   },
 
-  { "keys": ["super+alt+down"], "command": "move", "args": {"by": "block", "forward": true} }
+  { "keys": ["super+alt+down"], "command": "move", "args": {"by": "block", "forward": true} },
 
   //Google reader like bindings for Find results
   { "keys": ["m"], "command": "fold", "args":{}, 
