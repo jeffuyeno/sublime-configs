@@ -24,7 +24,16 @@
 		"*.db"
 	],
 	"find_selected_text": true,
-	"font_size": 13.0,
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		"build",
+		".git",
+		".nyc_output",
+		"*/public/packs",
+		"*/cache/webpacker"
+	],
+	"font_size": 19.0,
 	"ignored_packages":
 	[
 		"Vintage"
